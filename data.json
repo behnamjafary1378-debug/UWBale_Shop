@@ -1,0 +1,66 @@
+{
+  "categories": [
+    { "key": "electronics", "name": "الکترونیک", "emoji": "📱" },
+    { "key": "clothing", "name": "پوشاک", "emoji": "👕" }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "هدفون بلوتوثی",
+      "price": 350000,
+      "category": "electronics",
+      "description": "هدفون با کیفیت صدای عالی و عمر باتری طولانی",
+      "images": ["https://picsum.photos/400/400?random=1"],
+      "colors": [
+        { "id": 1, "color_name": "مشکی" },
+        { "id": 2, "color_name": "سفید" }
+      ],
+      "sizes": [
+        { "id": 1, "size_name": "استاندارد", "extra_price": 0 }
+      ],
+      "bundles": [
+        {
+          "id": 1,
+          "quantity": 1,
+          "rule_type": "free_all",
+          "limited_count": 0,
+          "total_price": 350000
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "تی‌شرت نخی",
+      "price": 120000,
+      "category": "clothing",
+      "description": "تی‌شرت با پارچه مرغوب و طراحی زیبا",
+      "images": ["https://picsum.photos/400/400?random=2"],
+      "colors": [
+        { "id": 3, "color_name": "قرمز" },
+        { "id": 4, "color_name": "آبی" },
+        { "id": 5, "color_name": "سبز" }
+      ],
+      "sizes": [
+        { "id": 2, "size_name": "S", "extra_price": 0 },
+        { "id": 3, "size_name": "M", "extra_price": 5000 },
+        { "id": 4, "size_name": "L", "extra_price": 10000 }
+      ],
+      "bundles": [
+        {
+          "id": 2,
+          "quantity": 2,
+          "rule_type": "free_all",
+          "limited_count": 0,
+          "total_price": 230000
+        },
+        {
+          "id": 3,
+          "quantity": 3,
+          "rule_type": "limited_free",
+          "limited_count": 1,
+          "total_price": 330000
+        }
+      ]
+    }
+  ]
+}
