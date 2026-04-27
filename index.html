@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فروشگاه مینی‌اپ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://tapi.bale.ai/miniapp.js?3"></script>
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Loading Screen -->
+        <div id="loading-screen" class="screen active">
+            <div class="loading-spinner"></div>
+            <p>در حال بارگذاری فروشگاه...</p>
+        </div>
+
+        <!-- Main Store Screen -->
+        <div id="store-screen" class="screen">
+            <header class="store-header">
+                <div class="header-content">
+                    <h1>🛍 فروشگاه</h1>
+                    <div id="cart-badge" class="cart-badge">
+                        <span>🛒</span>
+                        <span id="cart-count" class="badge">0</span>
+                    </div>
+                </div>
+                <div id="category-tabs" class="category-tabs">
+                    <!-- داینامیک لود می‌شود -->
+                </div>
+            </header>
+
+            <main id="products-container" class="products-grid">
+                <!-- محصولات اینجا رندر می‌شوند -->
+            </main>
+
+            <div id="pagination" class="pagination">
+                <!-- صفحه‌بندی -->
+            </div>
+        </div>
+
+        <!-- Product Detail Screen -->
+        <div id="product-detail-screen" class="screen">
+            <header class="detail-header">
+                <button id="back-button" class="icon-button">←</button>
+                <h2 id="detail-title">جزئیات محصول</h2>
+            </header>
+            
+            <div id="product-detail-content" class="detail-content">
+                <!-- جزئیات محصول -->
+            </div>
+        </div>
+
+        <!-- Cart Screen -->
+        <div id="cart-screen" class="screen">
+            <header class="cart-header">
+                <button id="cart-back-button" class="icon-button">←</button>
+                <h2>🛒 سبد خرید</h2>
+            </header>
+            
+            <div id="cart-content" class="cart-content">
+                <!-- محتوای سبد خرید -->
+            </div>
+            
+            <div id="cart-footer" class="cart-footer">
+                <!-- جمع کل و دکمه پرداخت -->
+            </div>
+        </div>
+
+        <!-- Checkout Screen -->
+        <div id="checkout-screen" class="screen">
+            <header class="checkout-header">
+                <button id="checkout-back-button" class="icon-button">←</button>
+                <h2>📝 تکمیل سفارش</h2>
+            </header>
+            
+            <form id="checkout-form" class="checkout-form">
+                <!-- فرم اطلاعات مشتری -->
+            </form>
+        </div>
+    </div>
+
+    <script src="js/bale-sdk.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
